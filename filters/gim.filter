@@ -97,11 +97,11 @@ if
 // VALUABLE — ALCHABLES
 if
 ( name:"rune*" 
-  && havalue:>5000
+  && havalue:>3000
   || name:"adamant*" 
-  && havalue:>5000 
+  && havalue:>3000 
   || name:"*staff" 
-  && havalue:>5000 
+  && havalue:>3000 
   || name:"battlestaff" )
 { textColor = "ffffff";
   menuTextColor = "f1c232";
@@ -148,6 +148,18 @@ if
   || name:"astral rune"
   || name:"soul rune"
   || name:"blighted * sack" )
+{ textColor = "ffffff";
+  menuTextColor = "351c75";
+  borderColor = "351c75";
+  backgroundColor = "69351c75";
+  icon = File("magic.png"); }
+
+if (name:"earth rune"
+  || name:"fire rune"
+  || name:"water rune"
+  || name:"air rune"
+  && quantity:>9
+)
 { textColor = "ffffff";
   menuTextColor = "351c75";
   borderColor = "351c75";
@@ -407,7 +419,7 @@ if
 
 // ABOVE 10K
 if
-( value:>10000 )
+( value:>4999 )
 { textColor = "ffffff";
   menuTextColor = "f1c232";
   borderColor = "f1c232";
@@ -416,5 +428,5 @@ if
 
 // BELOW 10K
 if
-( value:<10000 )
+( value:<5000 )
 { hidden = true; }
