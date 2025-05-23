@@ -42,6 +42,7 @@ if
   || name:"ensouled bear head"
   || name:"ensouled unicorn head"
   || name:"copper ore"
+  || name:"blighted entangle sack"
   || name:"tin ore" )
 { hidden = true; }
 
@@ -63,6 +64,17 @@ if
   borderColor = "990000";
   backgroundColor = "69990000";
   icon = File("miscellaneous.png"); }
+
+// Wilderness slayer
+if
+( name:"blighted *"
+  || name:"* teleport"
+)
+{ textColor = "ffffff";
+  menuTextColor = "990000";
+  borderColor = "990000";
+  backgroundColor = "69990000";
+  icon = File("blighted.png"); }
 
 // 1,000,000+
 if
